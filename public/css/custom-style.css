@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    width: auto;
+    height: auto;
+    overflow: none;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+b,
+strong {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+p,
+span,
+small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+.header {
+    background-color: #DBCFC2;
+    height: 120px;
+
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-content a {
+    text-decoration: none;
+    color: #000;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px;
+    width: 50%;
+    height: 430px;
+    max-width: 690px;
+    
+}
+
+.about1 {
+    grid-column: 1 / span 2;
+    max-height: 220px;
+}
+
+.about2, .about3{
+    max-height: 180px;
+}
+
+.about-block {
+    background-color: #E8984F;
+    border-radius: 42px;
+    color: #fff;
+    padding: 30px;
+}
+
+.images-section {
+    width: 50%;
+    max-width: 590px;
+    position: relative;
+    height: 590px;
+}
+
+.image-container {
+
+    min-width: 50px;
+    min-height: 100px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 265px;
+    height: 225px;
+    background-image: url('/img/cat1.png');
+}
+
+.image2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 245px;
+    height: 295px;
+    background-image: url('/img/cat3.png');
+}
+
+.image3 {
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    z-index: 5;
+    width: 320px;
+    height: 400px;
+    background-image: url('/img/cat2.png');
+}
+
+.mx-60 {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.mt-80{
+    margin-top: 80px;
+}
+
+.text-24 {
+    font-size: 24px;
+}
+
+@media (min-width: 1400px) {
+    .my-container {
+        max-width: 1400px;
+    }
+}
