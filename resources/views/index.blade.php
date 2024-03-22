@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.furfamily')
 
 <header>
     <x-header />
@@ -33,9 +33,18 @@
     </div>
 </div>
 
-<div class="flex-container mt-80">
-    <h2>KOTINDER</h2>
-    <div class="slider-block"></div>
+<div class="mt-80">
+    <h2>KOTINDER</h2></br>
+    <div class="flex-container">
+        <button>< </button>
+
+                <div class="slider-block">
+
+                    <div></div>
+
+                </div>
+                <button>></button>
+    </div>
 </div>
 <div class="flex-container mt-80">
     <h2>Наши зоны</h2>
