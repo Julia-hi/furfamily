@@ -18,10 +18,17 @@
 <body class="font-sans antialiased">
     @include('layouts.admin-navigation')
     <div class="bg-gray-50 text-black/50">
-        <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
+        <div class="relative min-h-screen flex flex-col items-center selection:bg-[#FF2D20] selection:text-white">
             <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
                 <main class="mt-6">
+                    <h1 class="text-center">Зона администратора</h1>
                     <h2>KOTINDER</h2>
+                    <x-primary-button id="createBtn" class="ms-3 my-3">
+                        {{ __('Добавить котика') }}
+                    </x-primary-button>
+                    <div id="createCatModal"></div>
+                    <div class="my-3">
+                    @if($cats->count()>0)
                     <table>
                         <thead>
                             <tr>
@@ -46,13 +53,19 @@
                             @endforeach
                         </tbody>
                     </table>
+                    @else
+                    <div>В базе данных котиков не обнаружено</div>
 
+                    @endif
+                    </div>
                 </main>
 
 
             </div>
         </div>
     </div>
+    <script src="{{ asset('js/jquery-3.7.1.js') }}"></script>
+    <script src="{{ asset('js/admin-page.js') }}"></script>
 </body>
 
 </html>
