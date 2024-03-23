@@ -18,6 +18,7 @@ return new class extends Migration
             $table->json('character');
             $table->date('birthday');
             $table->string('photo');
+            $table->boolean('is_active');
             $table->timestamps();
         });
     }

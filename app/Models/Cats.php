@@ -13,6 +13,7 @@ class Cats extends Model
         'gender',
         'character',
         'birthday',
-        'photo'
+        'photo',
+        'is_active'
     ];
 }
