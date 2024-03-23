@@ -31,10 +31,15 @@ small {
 }
 
 
+.nav-logo img{
+    position: relative;
+    display: block;
+    max-height: 50px !important;
+}
+
 .header {
     background-color: #DBCFC2;
     height: 120px;
-
 }
 
 .nav-content {
@@ -64,7 +69,7 @@ small {
     width: 50%;
     height: 430px;
     max-width: 690px;
-    
+
 }
 
 .about1 {
