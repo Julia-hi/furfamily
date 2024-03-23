@@ -9,15 +9,19 @@
 "use strict"
 
 window.addEventListener("load", () => {
+
     $("#createBtn").on("click", function() {
         showCreateForm();
       })
 })
 
+/**
+ * function for create form
+ */
 function showCreateForm(){
-    const createForm = document.querySelector("#createCatModal");
-    const createFormContent=
-    "<form><input type='text'placegolder='имя котика'><input type='file'></form>"
-
-    createForm.append(createFormContent);
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+      })
 }
+
+

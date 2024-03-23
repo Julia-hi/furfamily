@@ -134,6 +134,15 @@ small {
     background-image: url('/img/cat2.png');
 }
 
+.modal-header, .modal-header button{
+    height: 40px !important;
+    background-color: transparent !important;
+}
+
+.bg-modal{
+    background-color: rgba(133, 133, 133, 0.6);
+}
+
 .mx-60 {
     margin-left: 60px;
     margin-right: 60px;
