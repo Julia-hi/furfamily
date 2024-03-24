@@ -40,19 +40,69 @@
                                 </div>
                                 <div class="modal-body">
                                     <form action="#">
-                                        <input type="text" name="name" placeholder="Кличка">
-                                        <input type="date" name="birthday"><br>
-                                        <input type="radio" id="gender">Самец
-                                        <input type="radio" id="gender">Самочка <br>
-                                        <input type="checkbox" name="ch1" value="Игривый">Игривый
-                                        <input type="checkbox" name="ch2" value="Спокойный">Спокойный
-                                        <input type="checkbox" name="ch3" value="Ласковый">Ласковый
-                                        <input type="checkbox" name="ch4" value="Ленивый">Ленивый
+                                        <div class="form-group">
+                                            <input type="text" name="name" placeholder="Кличка" class="form-control rounded">
+                                        </div>
+                                        <div class="mt-3">
+                                            <div class="form-group">
+                                                <span>Дата рождения (чтобы показывать возраст)</span><br>
+                                                <input type="date" name="birthday" class="rounded"><br>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <div class="form-group form-check-inline">
+                                                <input type="radio" id="male" name="gender" value="m" class="form-check-input" selected>
+                                                <label for="male" class="form-check-label">Самец</label>
+                                            </div>
+                                            <div class="form-group form-check-inline">
+                                                <input type="radio" id="female" name="gender" value="f" class="form-check-input">
+                                                <label for="female" class="form-check-label">Самочка</label>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <span>Характер:</span><br>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" name="ch1" id="ch1" class="form-check-input" value="gamer">
+                                                <label class="form-check-label" for="ch4">Игривый</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" name="ch2" id="ch2" class="form-check-input" value="calm">
+                                                <label class="form-check-label" for="ch4">Спокойный</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" name="ch3" id="ch3" class="form-check-input" value="lovely">
+                                                <label class="form-check-label" for="ch4">Ласковый</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" name="ch4" id="ch4" class="form-check-input" value="lazy">
+                                                <label class="form-check-label" for="ch4">Ленивый</label><br>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <span>Показывать в котиндер?</span>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" id="yes" name="is_active" selected>
+                                                <label for="yes" class="form-check-label">Да</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" id="no" name="is_active">
+                                                <label for="is_active" class="form-check-label">Нет</label>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <div class="custom-file">
+                                                <label class="custom-file-label" for="photo">Фоточка</label><br>
+                                                <input type="file" class="custom-file-input" id="photo" name="photo">
+                                                <div class="invalid-feedback">Неверный формат файла</div>
+                                            </div>
+                                        </div>
                                     </form>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
-                                    <button type="submit" class="btn btn-success">Сохранить</button>
+                                <div class="mt-3">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+                                        <button type="button" class="btn btn-success">Сохранить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -96,6 +146,13 @@
         </div>
     </div>
     <script src="{{ asset('js/jquery-3.7.1.js') }}"></script>
+    <script>
+$("#photo").fileinput({
+    language: "ru",
+    uploadUrl: "/file-upload-batch/2",
+    allowedFileExtensions: ["jpg", "png", "gif"]
+});
+</script>
     <script src="{{ asset('js/bootstrap/bootstrap.js') }}"></script>
     <!-- <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap/npm.js') }}"></script> -->
