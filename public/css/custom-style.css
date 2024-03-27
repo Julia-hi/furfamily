@@ -133,6 +133,9 @@ small {
     height: 400px;
     background-image: url('/img/cat2.png');
 }
+.cat-container{
+    width: 100%;
+}
 
 .modal-header, .modal-header button{
     height: 40px !important;

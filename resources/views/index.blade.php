@@ -36,7 +36,8 @@
 <div class="mt-80">
     <h2>KOTINDER</h2></br>
     <div class="flex-container">
-        <button>< </button>
+        <button>
+            < </button>
 
                 <div class="slider-block">
 
@@ -56,6 +57,9 @@
 </div>
 <div class="flex-container mt-80">
 
-    <div class="">карта тут</div>
+    <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5660.5600205809715!2d20.471961193084695!3d44.815859886233625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7abc06cb05b1%3A0x533aa42a98d9ee61!2sCviji%C4%87eva%2040%2C%20Beograd%2011060%2C%20Serbia!5e0!3m2!1ses!2ses!4v1711569316296!5m2!1ses!2ses" style="border:0; width: 90vw; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
 </div>
 @endsection

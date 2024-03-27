@@ -39,7 +39,9 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="#">
+                                    <form action="#" method="post">
+                                        @csrf
+                                        @method('PUT')
                                         <div class="form-group">
                                             <input type="text" name="name" placeholder="Кличка" class="form-control rounded">
                                         </div>
@@ -147,12 +149,12 @@
     </div>
     <script src="{{ asset('js/jquery-3.7.1.js') }}"></script>
     <script>
-$("#photo").fileinput({
-    language: "ru",
-    uploadUrl: "/file-upload-batch/2",
-    allowedFileExtensions: ["jpg", "png", "gif"]
-});
-</script>
+        $("#photo").fileinput({
+            language: "ru",
+            uploadUrl: "/file-upload-batch/2",
+            allowedFileExtensions: ["jpg", "png", "gif"]
+        });
+    </script>
     <script src="{{ asset('js/bootstrap/bootstrap.js') }}"></script>
     <!-- <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap/npm.js') }}"></script> -->
