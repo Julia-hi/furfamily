@@ -32,7 +32,7 @@ small {
 }
 
 
-.nav-logo img{
+.nav-logo img {
     position: relative;
     display: block;
     max-height: 50px !important;
@@ -43,6 +43,22 @@ small {
     height: 120px;
 }
 
+.footer {
+    background-color: #DBCFC2;
+    min-height: 120px;
+    height: 200px;
+}
+
+.footer-img-box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-img-box img {
+    height: 100px;
+    width: auto;
+}
+
 .nav-content {
     display: flex;
     flex-direction: row;
@@ -51,9 +67,18 @@ small {
     height: 100%;
 }
 
-.nav-content a {
+.nav-content a,
+.flex-column a {
     text-decoration: none;
     color: #000;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
 }
 
 .flex-container {
@@ -70,7 +95,6 @@ small {
     width: 50%;
     height: 430px;
     max-width: 690px;
-
 }
 
 .about1 {
@@ -78,7 +102,8 @@ small {
     max-height: 220px;
 }
 
-.about2, .about3{
+.about2,
+.about3 {
     max-height: 180px;
 }
 
@@ -133,16 +158,18 @@ small {
     height: 400px;
     background-image: url('/img/cat2.png');
 }
-.cat-container{
+
+.cat-container {
     width: 100%;
 }
 
-.modal-header, .modal-header button{
+.modal-header,
+.modal-header button {
     height: 40px !important;
     background-color: transparent !important;
 }
 
-.bg-modal{
+.bg-modal {
     background-color: rgba(133, 133, 133, 0.6);
 }
 
@@ -151,7 +178,7 @@ small {
     margin-right: 60px;
 }
 
-.mt-80{
+.mt-80 {
     margin-top: 80px;
 }
 

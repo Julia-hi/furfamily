@@ -17,6 +17,9 @@
     <div class="container my-container">
         @yield('content')
     </div>
+    <footer>
+        <x-footer />
+    </footer>
 </body>
 
 </html>
