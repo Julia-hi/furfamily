@@ -2,11 +2,13 @@
 
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\IndexPageController;
 use Illuminate\Support\Facades\Route;
 
-Route::any('/', function () {
+/* Route::any('/', function () {
     return view('index');
-});
+}); */
+Route::get('/', [IndexPageController::class,'index'])->name('index');
 
 /* Route::get('/kotomama', function () {
     return view('adminpages.dashboard');
